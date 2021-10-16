@@ -1,17 +1,10 @@
-
 <?php
 
-$parametre1= 'l\'ours';
-$parametre2= 'pistolet';
-
-function writeSecretSentence ($result)
+function writeSecretSentence( string $parametre1, string $parametre2)
 {
-  
-  return $result;
+  return "$parametre1 s'incline face à $parametre2";
 }
 
-explode($parametre1, $parametre2);
-
-echo "$parametre1 s'incline face au $parametre2";
+echo writeSecretSentence("l\'ours", "pistolet");
 
 ?>
